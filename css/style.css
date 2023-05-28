@@ -1,7 +1,7 @@
 
 *{
     box-sizing: border-box;
-    font-family: Geneva, Verdana, sans-serif;
+    font-family:  Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -15,76 +15,215 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
+    padding:  0.3rem 0.7rem 0.3rem 0.7rem;
     background: #C4C754;}
 
 .logo {
-    max-width: 5rem;
-width: 50px;
-height: 50px;
+max-width: 5rem;
+width: 45px;
+height: 45px;
 border-radius: 115.077px;
 
-/* Inside auto layout */
+
+/* Inside auto layout
 flex: none;
-order: 1;
-flex-grow: 0;
+paint-order: ;
+flex-grow: 0; */
 }
-
-.nav-list {
-    list-style-type: none;
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-    align-items: end;
-}
-
-.nav-list li a {
-    text-decoration: none;
-    color: #1c1c1c;
-    color: #ecececec;
-}
-
 
 /* MENU HAMBURGUESA */
 
-    .abrir-menu, .cerrar-menu {
-        display: block;
-        border: 0;
-        font-size: 1.25rem;
-        background-color: transparent;
-        cursor: pointer;
-    }
+/* Estilos del botón de apertura */
+#openModal {
+    background-color: #C4C754;
+    color: #0c0707;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+  
+  /* Estilos del modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Estilos del contenido del modal */
+  .modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  /* Estilos del botón de cierre */
+  .close {
+    color: #888;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Estilos de la lista de enlaces del menú */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  ul li a:hover {
+    text-decoration: underline;
+  }
 
-    .abrir-menu {
-        color: #1c1c1c;
-    }
+#btnGroupAddon2 {
+background-color: #FC5C9C;
+  }
 
-    .cerrar-menu {
-        color: #ececec;
-    }
+/* INDEX */
+.somos_log{
+    padding: 1.5rem;
+}
 
-    .nav {
-        opacity: 0;
-        visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #1c1c1c;
-        padding: 2rem;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-    }
-
-    .nav.visible {
-        opacity: 1;
-        visibility: visible;
-    }
+.bi-bag-fill{
+    background-color: #C4C754;
     
-
     
+}
+
+
+/* CARD */
+
+.card {
+width: 300px;
+height: 392px;
+border: 2px solid #ccc;
+box-shadow: 0px 10px 10px 8px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+padding: 30px;
+margin: 10px;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 18px;
+}
+  
+  .card img {
+    width: 100%;
+    border-radius: 120px;
+
+  }
+  
+  .card-content {
+    margin-top: 10px;
+  }
+  
+  .card-content h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .card-content p {
+    font-size: 14px;
+    margin: 0;
+  }
+
+
+.btn_card{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 10px;
+gap: 10px;
+
+width: 211px;
+height: 48px;
+border: #FC5C9C;
+background: #FC5C9C;
+border-radius: 16px;
+
+/* Inside auto layout */
+order: 2;
+flex-grow: 0;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+
+
+color: #FFFFFF;
+
+
+/* Inside auto layout 
+
+flex: none;
+order: 0;
+flex-grow: 0;*/
+}
+
+.container_card{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.img_flower{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+.container_como_comprar{
+    display: flex;
+    justify-content: space-around;
+
+    width: auto;
+    border: 3px solid #C4C754;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px;
+
+}
+
+.container_titulo{
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
 
     
